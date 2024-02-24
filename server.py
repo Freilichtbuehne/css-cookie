@@ -6,7 +6,7 @@ import argparse, logging, urllib.parse, uuid
 class CustomFormatter(argparse.ArgumentDefaultsHelpFormatter, argparse.RawDescriptionHelpFormatter): pass
 parser = argparse.ArgumentParser(
     formatter_class=CustomFormatter,
-    description="Server to receive track clients using CSS cookies")
+    description="Server to track clients using CSS cookies")
 
 scan_group = parser.add_argument_group('PARAMETERS')
 parser.add_argument("-v", "--verbose",  action='store_true', help="Increase output verbosity")
